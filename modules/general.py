@@ -8,7 +8,7 @@ class General(commands.Cog):
     "Simple commands which anybody can use."
     def __init__(self, bot): self.bot = bot
         
-    @commands.command(aliases=["about", "info"])
+    @commands.command(aliases=["about", "info", "version"])
     @commands.cooldown(1, 15, commands.BucketType.channel)
     async def build(self, ctx): # p!build
         "Shows information regarding the bot."
